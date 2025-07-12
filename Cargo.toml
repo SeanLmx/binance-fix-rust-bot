@@ -1,0 +1,25 @@
+[package]
+name = "kraken-ws-rust-bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = { version = "0.20", features = ["native-tls"] }
+tungstenite = "0.20"
+futures-util = "0.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1.0"
+dotenvy = "0.15"
+log = "0.4"
+env_logger = "0.10"
+url = "2.5.4"
+tokio-native-tls = "0.3.1"
+chrono = "0.4.41"
+tokio-util = { version = "0.7.15", features = ["codec"] }
+base64 = "0.22.1"
+ed25519-dalek = "2.2.0"
+anyhow = "1.0.98"
+uuid = { version = "1.17.0", features = ["v4", "rng", "std"] }
+native-tls = "0.2.14"
+bytes = "1.8.0"
